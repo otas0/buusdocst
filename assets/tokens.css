@@ -1,0 +1,60 @@
+/**
+ * buusdo Cybersecurity Service Tool — instrument palette.
+ * Black field, warm type, one orange mark. Sharp corners.
+ *
+ * Designers: --halt is the Halt accent (same hex as --danger / --accent). Prefer --halt
+ * for user-block evidence borders, primary CTA fills, and strong “leave” cues; keep --danger
+ * for generic danger. Do not fill primary buttons with --text (reads as plain white on --bg).
+ *
+ * Safari disabled controls (shared by extension/popup + desktop-app dashboard):
+ * ONLY pattern — `color: var(--muted)` + `outline: 1px solid var(--halt)` (+ outline-offset: 1px).
+ * Do not use color-mix / translucent Halt borders for disabled states.
+ *
+ * Theme: default dark. Settings Appearance switch sets `data-theme="light"|"dark"` on <html>.
+ */
+:root,
+:root[data-theme="dark"] {
+  --bg: #0e0e0e;
+  --bg-elev: #161616;
+  --bg-soft: #1c1c1c;
+  /* Popovers / lang panel / locale recommend — must track theme (never hardcode dark). */
+  --panel: #161616;
+  --text: #f3f1ea;
+  /* --muted is secondary chrome; desktop .hint / .lists-path use #a39e93 (AA on --bg). */
+  --muted: #8d897f;
+  --line: rgba(243, 241, 234, 0.16);
+  --ring: #ff4d00;
+  --safe: #f3f1ea;
+  --caution: #f3f1ea;
+  --danger: #ff4d00;
+  --halt: #ff4d00;
+  --idle: #3a3a3a;
+  --accent: #ff4d00;
+  --border: rgba(243, 241, 234, 0.16);
+  --panel-edge: rgba(243, 241, 234, 0.28);
+  --radius: 0px;
+  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+
+/* Light field — same instrument geometry; cream plate, charcoal type, Halt accent. */
+:root[data-theme="light"] {
+  --bg: #f3f1ea;
+  --bg-elev: #ebe8df;
+  --bg-soft: #e4e0d6;
+  --panel: #ebe8df;
+  --text: #1a1916;
+  --muted: #5c584f;
+  --line: rgba(26, 25, 22, 0.16);
+  --ring: #ff4d00;
+  --safe: #1a1916;
+  --caution: #1a1916;
+  --danger: #ff4d00;
+  --halt: #ff4d00;
+  --idle: #b8b3a6;
+  --accent: #ff4d00;
+  --border: rgba(26, 25, 22, 0.16);
+  --panel-edge: rgba(26, 25, 22, 0.36);
+  color-scheme: light;
+}

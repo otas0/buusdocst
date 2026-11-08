@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>隐私政策摘要 · buusdo Cybersecurity Service Tool</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./lang-persist.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="top">
+        <h1 class="brand-lockup">
+          <a href="./index.html">
+            <img
+              class="brand-logo"
+              src="./assets/buusdo-wordmark.png"
+              width="117"
+              height="40"
+              decoding="async"
+              alt="buusdo Cybersecurity Service Tool"
+            />
+          </a>
+        </h1>
+        <div class="top-end">
+          <p class="lang-switch" data-testid="china-lang-switch">
+            <a href="./privacy.html?china_lang=zh" data-china-lang="zh" aria-current="page">中文</a>
+            ·
+            <a href="./privacy-en.html?china_lang=en" data-china-lang="en">EN</a>
+          </p>
+          <nav class="china-site-nav" aria-label="站点导航">
+            <a href="./index.html">入口</a>
+            <a href="./install.html">安装</a>
+            <a href="./privacy.html" aria-current="page">隐私</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="stage">
+        <p class="kicker"><span class="mark" aria-hidden="true"></span>隐私</p>
+        <h2>隐私政策摘要</h2>
+        <p class="lede">
+          完整隐私政策在 Workers 站点。以下为面向中国访客的摘要：无云账号同步；列表仅保存在本机，可用 JSON/QR 或桌面 shield-backup.json 自行迁移。
+        </p>
+        <div class="actions">
+          <a
+            class="primary-button"
+            href="https://buusdocst.mtsu.workers.dev/zh-Hans/privacy"
+            rel="noreferrer"
+            >打开正式隐私页</a
+          >
+          <a class="ghost-button" href="./index.html">返回入口</a>
+        </div>
+
+        <h3>检查使用什么</h3>
+        <p>
+          你输入的网址会在 buusdo Cybersecurity Service Tool 服务器上解析结构、匹配自有威胁列表，并可选探测可达性（DNS /
+          HTTP）。不会把网址送给第三方信誉服务，也不会完整抓取页面内容。
+        </p>
+        <h3>存什么</h3>
+        <p>
+          默认不存储。浏览器 / 扩展 / 桌面端可选择仅本机保存拦截 / 信任列表或检查历史。产品不提供云账号同步；跨设备请用
+          JSON/QR 或桌面 shield-backup.json 自行迁移。
+        </p>
+        <h3>联系</h3>
+        <p>隐私问题请联系运行该部署的运营方。勿在公开渠道粘贴敏感检查结果。</p>
+
+        <section id="halt-faq" data-testid="china-halt-faq">
+          <h3>Halt（停止）短问答</h3>
+          <p class="lede">与入口页「出现 Halt 时怎么办」一致的诚实边界，方便在信任结果前快速了解能做什么、不能做什么。</p>
+          <ul class="halt-steps">
+            <li>
+              <strong>出现 Halt 后先做什么？</strong>
+              立刻离开该页面；不要输入密码、卡号或短信验证码；用你已信任的官方域名或 App 独立核实。
+            </li>
+            <li>
+              <strong>能清除网站已收集的个人信息吗？</strong>
+              不能。若已输入，请到真正的官方站点改密，并留意银行 / 邮箱告警。
+            </li>
+            <li>
+              <strong>这是杀毒软件吗？</strong>
+              不是。关闭标签页只是停止继续在该地址输入数据；不会扫描或清理设备。
+            </li>
+            <li>
+              <strong>结果是别人投票出来的吗？</strong>
+              不是。来自 buusdo Cybersecurity Service Tool 自有威胁列表与地址信号，不是大众举报计数。
+            </li>
+          </ul>
+          <p>
+            <a class="inline" href="./index.html#halt-next-steps">查看入口页逐步说明</a>
+            ·
+            <a
+              class="inline"
+              href="https://buusdocst.mtsu.workers.dev/zh-Hans"
+              rel="noreferrer"
+              >打开完整检查</a
+            >
+          </p>
+        </section>
+
+        <p class="muted">摘要日期：2026-11-08 · 以 Workers 正式隐私页为准</p>
+      </section>
+
+      <footer class="foot">
+        <p>buusdo Cybersecurity Service Tool · GitHub Pages</p>
+        <p class="foot-note" id="china-lang-pref">
+          语言偏好仅保存在本机（本站 <code>localStorage</code>，不上传）。
+          英文摘要页同样提供 Workers 简体入口：
+          <a
+            data-testid="china-workers-zh-hans-footnote"
+            href="https://buusdocst.mtsu.workers.dev/zh-Hans"
+            rel="noreferrer"
+            >/zh-Hans 完整检查</a
+          >
+          （与 <a href="./privacy-en.html">privacy-en.html</a> / <a href="./en.html">en.html</a> 次要 CTA 一致）。
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy summary · buusdo Cybersecurity Service Tool</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./lang-persist.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="top">
+        <h1 class="brand-lockup">
+          <a href="./en.html">
+            <img
+              class="brand-logo"
+              src="./assets/buusdo-wordmark.png"
+              width="117"
+              height="40"
+              decoding="async"
+              alt="buusdo Cybersecurity Service Tool"
+            />
+          </a>
+        </h1>
+        <div class="top-end">
+          <p class="lang-switch" data-testid="china-lang-switch">
+            <a href="./privacy.html?china_lang=zh" data-china-lang="zh">中文</a>
+            ·
+            <a href="./privacy-en.html?china_lang=en" data-china-lang="en" aria-current="page">EN</a>
+          </p>
+          <nav class="china-site-nav" aria-label="Site">
+            <a href="./en.html">Entry</a>
+            <a href="./install-en.html">Install</a>
+            <a href="./privacy-en.html" aria-current="page">Privacy</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="stage">
+        <p class="kicker"><span class="mark" aria-hidden="true"></span>Privacy</p>
+        <h2>Privacy policy summary</h2>
+        <p class="lede">
+          The full privacy policy lives on the Workers site. This page is a short summary for visitors who
+          land on the China GitHub Pages entry: no cloud account sync; block/trust lists stay on-device and
+          can be moved with JSON/QR or desktop <code>shield-backup.json</code>.
+        </p>
+        <div class="actions">
+          <a
+            class="primary-button"
+            href="https://buusdocst.mtsu.workers.dev/en/privacy"
+            rel="noreferrer"
+            >Open full privacy page</a
+          >
+          <a class="ghost-button" href="./en.html">Back to entry</a>
+        </div>
+
+        <h3>What a check uses</h3>
+        <p>
+          The address you enter is parsed on the buusdo Cybersecurity Service Tool server, matched against our own threat list, and
+          may get a reachability probe (DNS / HTTP). We do not send URLs to third-party reputation services,
+          and we do not scrape full page content.
+        </p>
+        <h3>What is stored</h3>
+        <p>
+          Default: nothing. Browser / extension / desktop can optionally keep on-device block/trust lists or
+          check history. There is no cloud account sync; move lists yourself with JSON/QR or desktop
+          <code>shield-backup.json</code>.
+        </p>
+        <h3>Contact</h3>
+        <p>
+          Privacy questions go to the operator of this deployment. Do not paste sensitive check results in
+          public channels.
+        </p>
+
+        <section id="halt-faq" data-testid="china-halt-faq">
+          <h3>Halt — short FAQ</h3>
+          <p class="lede">
+            Same honest limits as the entry page “If you see Halt” steps — useful before you trust a Halt result.
+          </p>
+          <ul class="halt-steps">
+            <li>
+              <strong>What first after Halt?</strong>
+              Leave that page now; do not enter passwords, card numbers, or SMS codes; verify on an official
+              domain or app you already trust.
+            </li>
+            <li>
+              <strong>Can you wipe data a site already collected?</strong>
+              No. If you already typed secrets, change them on the real official site and watch bank / email
+              alerts.
+            </li>
+            <li>
+              <strong>Is this antivirus?</strong>
+              No. Closing the tab only stops you from entering more data on that address; it does not scan
+              or clean the device.
+            </li>
+            <li>
+              <strong>Is the result a public vote?</strong>
+              No. It comes from buusdo Cybersecurity Service Tool’s own threat list and address signals — not a crowd report count.
+            </li>
+          </ul>
+          <p>
+            <a class="inline" href="./en.html#halt-next-steps">Entry page step-by-step</a>
+            ·
+            <a
+              class="inline"
+              href="https://buusdocst.mtsu.workers.dev/en"
+              rel="noreferrer"
+              data-testid="china-workers-en"
+              >Open full check (EN)</a
+            >
+          </p>
+        </section>
+
+        <p class="muted">Summary date: 2026-11-08 · Workers privacy page is authoritative</p>
+      </section>
+
+      <footer class="foot">
+        <p>buusdo Cybersecurity Service Tool · GitHub Pages</p>
+        <p class="foot-note" id="china-lang-pref">
+          Language preference is stored on this device only (this site’s <code>localStorage</code>, not uploaded).
+          Prefer Simplified Chinese on Workers?
+          <a
+            data-testid="china-workers-zh-hans-footnote"
+            href="https://buusdocst.mtsu.workers.dev/zh-Hans"
+            rel="noreferrer"
+            >/zh-Hans full check</a
+          >
+          (same secondary CTA pattern as <a href="./en.html">en.html</a>).
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

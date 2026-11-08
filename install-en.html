@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Install · buusdo Cybersecurity Service Tool</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./lang-persist.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="top">
+        <h1 class="brand-lockup">
+          <a href="./en.html">
+            <img
+              class="brand-logo"
+              src="./assets/buusdo-wordmark.png"
+              width="117"
+              height="40"
+              decoding="async"
+              alt="buusdo Cybersecurity Service Tool"
+            />
+          </a>
+        </h1>
+        <div class="top-end">
+          <p class="lang-switch" data-testid="china-lang-switch">
+            <a href="./install.html?china_lang=zh" data-china-lang="zh">中文</a>
+            ·
+            <a href="./install-en.html?china_lang=en" data-china-lang="en" aria-current="page">EN</a>
+          </p>
+          <nav class="china-site-nav" aria-label="Site">
+            <a href="./en.html">Entry</a>
+            <a href="./install-en.html" aria-current="page">Install</a>
+            <a href="./privacy-en.html">Privacy</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="stage">
+        <p class="kicker"><span class="mark" aria-hidden="true"></span>Install</p>
+        <h2>Chrome</h2>
+        <p>
+          Official path: Chrome Web Store → search <strong>buusdo Cybersecurity Service Tool</strong> →
+          Add to Chrome. Store URLs stay empty in product config until the listing is live; until then use
+          the developer package / sideload notes you were given.
+        </p>
+        <p class="lede">
+          The extension talks to
+          <code>https://buusdocst.mtsu.workers.dev</code>
+          by default. A Workers timeout on this network shows a dedicated message — that does not mean the
+          extension is broken.
+        </p>
+      </section>
+
+      <section class="stage">
+        <p class="kicker">Safari</p>
+        <h2>Safari (macOS)</h2>
+        <p>
+          Official path: Mac App Store → install the buusdo Cybersecurity Service Tool wrapper app → Safari
+          → Settings → Extensions → enable. Store URL stays empty until the listing is approved.
+        </p>
+      </section>
+
+      <section class="stage">
+        <p class="kicker">Desktop</p>
+        <h2>Desktop app (GitHub, unsigned)</h2>
+        <p>
+          Download Windows / macOS zip / Linux deb from GitHub Releases. The current mac zip is about
+          <strong>~58 MB</strong>. Builds are <strong>not notarized / not code-signed</strong>: macOS may
+          block the first open (Gatekeeper); Windows may show SmartScreen (“Unknown publisher”) — expected
+          for this ship path. Same steps as Workers Settings:
+          <a
+            class="text-button"
+            data-testid="china-setup-guide"
+            href="https://github.com/otas0/buusdo-Cybersecurity-Service-Tool/blob/main/docs/DESKTOP_SETUP_GUIDE.md"
+            rel="noreferrer"
+            >Setup guide (unsigned)</a
+          >
+          (same as
+          <a href="https://buusdocst.mtsu.workers.dev/en/settings#settings-desktop" rel="noreferrer"
+            >Workers Settings</a
+          >
+          → Setup guide).
+        </p>
+      </section>
+
+      <section class="stage">
+        <p class="kicker">Website</p>
+        <h2>Full checker</h2>
+        <p class="lede">When the network allows, open the full check UI on Workers.</p>
+        <div class="actions">
+          <a
+            class="primary-button"
+            data-full-check
+            href="https://buusdocst.mtsu.workers.dev/en"
+            rel="noreferrer"
+            data-testid="china-workers-en"
+            >Open full check (EN)</a
+          >
+          <a class="ghost-button" href="./en.html">Back to entry</a>
+        </div>
+        <div
+          id="workers-reach"
+          class="reach"
+          data-state="checking"
+          aria-live="polite"
+        >
+          <p class="reach-row">
+            <span class="reach-status" data-reach-status>Checking Workers…</span>
+          </p>
+          <p class="reach-detail" data-reach-detail></p>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <p>buusdo Cybersecurity Service Tool · GitHub Pages</p>
+        <p class="foot-note">
+          <a href="./privacy-en.html#china-lang-pref">Language preference is stored on this device only</a>.
+          Prefer Simplified Chinese on Workers?
+          <a
+            data-testid="china-workers-zh-hans-footnote"
+            href="https://buusdocst.mtsu.workers.dev/zh-Hans"
+            rel="noreferrer"
+            >/zh-Hans full check</a
+          >
+          (same secondary CTA pattern as <a href="./en.html">en.html</a>).
+        </p>
+      </footer>
+    </main>
+    <script src="./reachability.js" defer></script>
+  </body>
+</html>

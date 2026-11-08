@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="buusdo Cybersecurity Service Tool。面向中国大陆访客的说明与入口。"
+    />
+    <title>buusdo Cybersecurity Service Tool · 中国访问入口</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./lang-persist.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="top">
+        <h1 class="brand-lockup">
+          <a href="./index.html" aria-current="page">
+            <img
+              class="brand-logo"
+              src="./assets/buusdo-wordmark.png"
+              width="117"
+              height="40"
+              decoding="async"
+              alt="buusdo Cybersecurity Service Tool"
+            />
+          </a>
+        </h1>
+        <div class="top-end">
+          <p class="lang-switch" data-testid="china-lang-switch">
+            <a href="./index.html?china_lang=zh" data-china-lang="zh" aria-current="page">中文</a>
+            ·
+            <a href="./en.html?china_lang=en" data-china-lang="en">EN</a>
+          </p>
+          <nav class="china-site-nav" aria-label="站点导航">
+            <a href="./index.html" aria-current="page">入口</a>
+            <a href="./install.html">安装</a>
+            <a href="./privacy.html">隐私</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="stage">
+        <p class="kicker"><span class="mark" aria-hidden="true"></span>中国入口</p>
+        <h2>中国大陆访问说明</h2>
+        <p class="lede">
+          完整检查服务运行在 Cloudflare Workers（
+          <code>buusdocst.mtsu.workers.dev</code>
+          ）。在部分大陆网络下该域名可能较慢或超时，这不一定代表服务宕机。
+        </p>
+        <p>
+          本页由 GitHub Pages 托管，便于在 Workers 不可达时仍能打开产品说明、隐私政策与扩展安装指引。
+        </p>
+        <p class="hint" data-testid="china-europe-packs-full">
+          欧洲目录语言包均为完整包（含中欧 / 南欧 / 波罗的海 / ca / ga / mt / uk / is / sl），无「精简欧洲」或部分包暗示。
+        </p>
+        <div class="actions">
+          <a
+            class="primary-button"
+            data-full-check
+            href="https://buusdocst.mtsu.workers.dev/zh-Hans"
+            rel="noreferrer"
+            data-testid="china-workers-zh-hans"
+            >打开完整检查（简体中文 /zh-Hans）</a
+          >
+          <a class="ghost-button" href="./install.html">扩展安装</a>
+          <a class="ghost-button" href="./privacy.html">隐私摘要</a>
+        </div>
+        <p class="hint" data-testid="china-workers-locale-hint" id="china-workers-locale-hint">
+          完整检查与 Workers 产品站同文：默认 <code>/zh-Hans</code>；顶栏可改语言。
+          <button
+            type="button"
+            class="hint-dismiss"
+            data-testid="china-workers-locale-hint-dismiss"
+            hidden
+          >
+            关闭
+          </button>
+        </p>
+        <script>
+          (function () {
+            var KEY = "buusdocst-china-hint-dismissed";
+            var el = document.getElementById("china-workers-locale-hint");
+            var btn = el && el.querySelector("[data-testid='china-workers-locale-hint-dismiss']");
+            if (!el || !btn) return;
+            try {
+              if (localStorage.getItem(KEY) === "1") {
+                el.hidden = true;
+                return;
+              }
+            } catch (e) {}
+            btn.hidden = false;
+            btn.addEventListener("click", function () {
+              try {
+                localStorage.setItem(KEY, "1");
+              } catch (e) {}
+              el.hidden = true;
+            });
+          })();
+        </script>
+        <div
+          id="workers-reach"
+          class="reach"
+          data-state="checking"
+          aria-live="polite"
+        >
+          <p class="reach-row">
+            <span class="reach-status" data-reach-status>正在探测 Workers…</span>
+          </p>
+          <p class="reach-detail" data-reach-detail></p>
+        </div>
+      </section>
+
+      <section class="stage">
+        <p class="kicker">产品</p>
+        <h2>产品做什么</h2>
+        <p>
+          buusdo Cybersecurity Service Tool（Buusdo 产品线中的独立产品）在信任网址前，用自有威胁列表、地址结构、品牌仿冒信号、DNS
+          与可达性做检查。不把网址送给第三方信誉服务。
+        </p>
+      </section>
+
+      <section class="stage" data-testid="china-halt-next-steps" id="halt-next-steps">
+        <p class="kicker"><span class="mark" aria-hidden="true"></span>停止</p>
+        <h2>出现 Halt（停止）时怎么办</h2>
+        <p class="lede">
+          完整 Halt 结果页在 Workers 检查站（离开、独立核实、可选举报）。本页只提供同样的下一步摘要；请在可访问 Cloudflare 时打开完整检查。
+        </p>
+        <ol class="halt-steps">
+          <li>立刻离开该页面，不要继续使用刚才检查的地址。</li>
+          <li>不要在该站点输入密码、银行卡号或短信验证码。</li>
+          <li>用你已经信任的官方域名或 App（书签、银行卡、已知应用商店）独立核实——不要用可疑页上的电话或邮箱。</li>
+          <li>可选：在完整检查结果里保存本地举报草稿；扩展或桌面端可加入个人拦截列表。</li>
+        </ol>
+        <p class="hint">
+          诚实边界：不能清除网站已收集的个人信息；不是杀毒软件；结果来自自有列表与地址信号，不是大众投票数。
+        </p>
+        <div class="actions">
+          <a
+            class="primary-button"
+            data-full-check
+            href="https://buusdocst.mtsu.workers.dev/zh-Hans"
+            rel="noreferrer"
+            >打开完整检查（简体中文 /zh-Hans）</a
+          >
+        </div>
+      </section>
+
+      <footer class="foot">
+        <p>buusdo Cybersecurity Service Tool · GitHub Pages</p>
+        <p class="foot-note">
+          <a href="./privacy.html#china-lang-pref">语言偏好仅保存在本机</a>。
+        </p>
+      </footer>
+    </main>
+    <script src="./reachability.js" defer></script>
+  </body>
+</html>

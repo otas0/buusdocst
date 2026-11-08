@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="buusdo Cybersecurity Service Tool. China-facing entry on GitHub Pages."
+    />
+    <title>buusdo Cybersecurity Service Tool · China entry</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./lang-persist.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="top">
+        <h1 class="brand-lockup">
+          <a href="./en.html" aria-current="page">
+            <img
+              class="brand-logo"
+              src="./assets/buusdo-wordmark.png"
+              width="117"
+              height="40"
+              decoding="async"
+              alt="buusdo Cybersecurity Service Tool"
+            />
+          </a>
+        </h1>
+        <div class="top-end">
+          <p class="lang-switch" data-testid="china-lang-switch">
+            <a href="./index.html?china_lang=zh" data-china-lang="zh">中文</a>
+            ·
+            <a href="./en.html?china_lang=en" data-china-lang="en" aria-current="page">EN</a>
+          </p>
+          <nav class="china-site-nav" aria-label="Site">
+            <a href="./en.html" aria-current="page">Entry</a>
+            <a href="./install-en.html">Install</a>
+            <a href="./privacy-en.html">Privacy</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="stage">
+        <p class="kicker"><span class="mark" aria-hidden="true"></span>China entry</p>
+        <h2>Why this page</h2>
+        <p class="lede">
+          The live checker runs on Cloudflare Workers
+          (<code>buusdocst.mtsu.workers.dev</code>). Some networks in mainland China
+          time out to <code>*.workers.dev</code> even when the Worker is healthy.
+        </p>
+        <p>
+          This GitHub Pages site is a reachable landing for buusdo Cybersecurity Service
+          Tool: privacy summary, install links, and a path back to the full product when
+          Cloudflare is accessible.
+        </p>
+        <p class="hint" data-testid="china-europe-packs-full">
+          All Europe catalog locale packs are full (including CE / SE / Baltic /
+          <code>ca</code> / <code>ga</code> / <code>mt</code> / <code>uk</code> /
+          <code>is</code> / <code>sl</code>) — no thin-Europe or partial-pack implication.
+        </p>
+        <div class="actions">
+          <a
+            class="primary-button"
+            data-full-check
+            href="https://buusdocst.mtsu.workers.dev/en"
+            rel="noreferrer"
+            >Open full check (EN)</a
+          >
+          <a
+            class="ghost-button"
+            data-testid="china-workers-zh-hans"
+            href="https://buusdocst.mtsu.workers.dev/zh-Hans"
+            rel="noreferrer"
+            >简体中文 /zh-Hans</a
+          >
+          <a class="ghost-button" href="./install-en.html">Install</a>
+          <a class="ghost-button" href="./privacy-en.html">Privacy</a>
+        </div>
+        <div
+          id="workers-reach"
+          class="reach"
+          data-state="checking"
+          aria-live="polite"
+        >
+          <p class="reach-row">
+            <span class="reach-status" data-reach-status>Checking Workers…</span>
+          </p>
+          <p class="reach-detail" data-reach-detail></p>
+        </div>
+      </section>
+
+      <section class="stage">
+        <p class="kicker">Product</p>
+        <h2>What the product does</h2>
+        <p>
+          buusdo Cybersecurity Service Tool (a separate product in the Buusdo line) checks an address with
+          our own threat list, structure signals, brand lookalikes, DNS and reachability — before you trust
+          the site. URLs are not sent to third-party reputation services.
+        </p>
+      </section>
+
+      <section class="stage" data-testid="china-halt-next-steps" id="halt-next-steps">
+        <p class="kicker"><span class="mark" aria-hidden="true"></span>Halt</p>
+        <h2>If you see Halt</h2>
+        <p class="lede">
+          The full Halt result (leave, verify, optional report) lives on the Workers checker.
+          This page mirrors the same next steps when Cloudflare is reachable.
+        </p>
+        <ol class="halt-steps">
+          <li>Leave the page now — do not continue on the address you checked.</li>
+          <li>Do not enter passwords, card numbers, or SMS codes on that site.</li>
+          <li>
+            Verify independently on an official domain or app you already trust (bookmark,
+            bank card, known store). Do not use phone numbers or emails from the suspect page.
+          </li>
+          <li>
+            Optional: save a local report draft on the full checker; block the host in the
+            extension or desktop app.
+          </li>
+        </ol>
+        <p class="hint">
+          Honest limits: cannot wipe data a site already collected; not antivirus; results
+          come from the curated list and address signals — not a public vote count.
+        </p>
+        <div class="actions">
+          <a
+            class="primary-button"
+            data-full-check
+            href="https://buusdocst.mtsu.workers.dev/en"
+            rel="noreferrer"
+            >Open full check (EN)</a
+          >
+        </div>
+      </section>
+
+      <footer class="foot">
+        <p>buusdo Cybersecurity Service Tool · GitHub Pages</p>
+        <p class="foot-note">
+          <a href="./privacy-en.html#china-lang-pref">Language preference is stored on this device only</a>.
+          Prefer Simplified Chinese on Workers?
+          <a data-testid="china-workers-zh-hans-footnote" href="https://buusdocst.mtsu.workers.dev/zh-Hans" rel="noreferrer"
+            >/zh-Hans full check</a
+          >
+          (same as the secondary button above).
+        </p>
+      </footer>
+    </main>
+    <script src="./reachability.js" defer></script>
+  </body>
+</html>
