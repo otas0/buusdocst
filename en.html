@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="buusdo Cybersecurity Service Tool: full checking is not offered on mainland China networks. Read this notice; do not wait for workers.dev to redirect."
+    />
+    <title>Mainland service not offered · Notice · buusdo Cybersecurity Service Tool</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./lang-persist.js"></script>
+    <script src="./region-redirect.js"></script>
+  </head>
+  <body>
+    <main class="shell" data-testid="china-notice">
+      <header class="top">
+        <h1 class="brand-lockup">
+          <a href="./en.html" aria-current="page">
+            <img
+              class="brand-logo"
+              data-brand-wordmark="1"
+              data-src-dark="./assets/buusdo-wordmark.svg"
+              data-src-light="./assets/buusdo-wordmark-on-light.svg"
+              src="./assets/buusdo-wordmark.svg"
+              width="117"
+              height="40"
+              decoding="async"
+              alt="buusdo Cybersecurity Service Tool"
+            />
+          </a>
+        </h1>
+        <div class="top-end">
+          <p class="lang-switch" data-testid="china-lang-switch">
+            <a href="./index.html?china_lang=zh" data-china-lang="zh">中文</a>
+            ·
+            <a href="./en.html?china_lang=en" data-china-lang="en" aria-current="page">EN</a>
+          </p>
+        </div>
+      </header>
+
+      <article class="stage notice">
+        <p class="kicker"><span class="mark" aria-hidden="true"></span>Notice</p>
+        <h2 data-testid="china-notice-title">
+          Full checking is not offered on mainland China networks
+        </h2>
+
+        <p
+          class="lede notice-status"
+          data-testid="china-notice-service-closed"
+          role="status"
+        >
+          <strong>Bottom line:</strong>
+          For mainland China network conditions, this Project
+          <strong>does not offer or promise</strong>
+          full website checking. Do not rely on
+          <code>https://buusdocst.mtsu.workers.dev</code>
+          — that host often cannot connect from the mainland, and
+          <strong>cannot automatically send you here</strong>.
+        </p>
+
+        <p class="lede notice-top-tip" data-testid="china-notice-workers-unreachable-ok">
+          <strong>Cannot open Workers (timeout / endless spinner) is expected</strong>
+          — that is not a “redirect still loading”; the request never reaches Cloudflare.
+          Open this notice via its own URL or the poster QR;
+          <strong>do not wait</strong> for
+          <code>workers.dev</code>
+          to bounce you here.
+        </p>
+
+        <p class="lede">Dear users,</p>
+        <p>
+          Thank you for your interest in buusdo Cybersecurity Service Tool (the “Project”). This
+          notice explains the mainland China service arrangement.
+        </p>
+
+        <h3>1. Reason and scope</h3>
+        <p>
+          Full checking runs on Cloudflare Workers (
+          <code>https://buusdocst.mtsu.workers.dev</code>
+          ). On some mainland China networks that host is slow, times out, or unreachable.
+          Therefore:
+        </p>
+        <ul>
+          <li>
+            <strong>Mainland users should treat this notice as the only official explanation
+            entry</strong>
+            (
+            <code>https://otas0.github.io/buusdocst/</code>
+            ).
+          </li>
+          <li>
+            From
+            <strong>22 November 2026</strong>
+            that entry keeps only this notice (explainers / privacy summaries / install guides
+            offline).
+          </li>
+          <li>
+            From
+            <strong>28 November 2026</strong>:
+            Workers
+            <strong>no longer</strong>
+            force-redirects to this notice by Cloudflare country (mainland networks often cannot open Workers; country redirects only mis-route reachable users).
+          </li>
+          <li>
+            If mainland TCP
+            <em>cannot</em>
+            reach Workers: bookmark or scan
+            <strong>this page’s URL</strong>
+            (store / QR / promo / extension also point here) — do not wait for a redirect.
+          </li>
+        </ul>
+        <p>
+          Scope targets mainland China network conditions; it does
+          <strong>not</strong>
+          mean Workers is unavailable on every network worldwide.
+        </p>
+
+        <h3>2. How the two entries work together</h3>
+        <p>There are two related entry points:</p>
+        <ul>
+          <li>
+            China mainland entry —
+            <code>https://otas0.github.io/buusdocst/</code>
+            (this notice; reached via store / QR / promo / extension — not a Worker country redirect)
+          </li>
+          <li>
+            Workers full checker —
+            <code>https://buusdocst.mtsu.workers.dev</code>
+            (product UI; e.g.
+            <code>/zh-Hans</code>, <code>/zh-Hant</code>, <code>/en</code>)
+          </li>
+        </ul>
+        <ol>
+          <li>
+            <strong>Mainland readers</strong>
+            : this notice is the only official explanation entry; full checking is
+            <strong>not offered</strong>
+            — do not wait for
+            <code>workers.dev</code>
+            to redirect.
+          </li>
+          <li>
+            <strong>If Workers is reachable</strong>
+            : use the product site normally; this notice remains the mainland explanation entry and is not forced by country code.
+          </li>
+          <li>
+            <strong>Only on non-mainland, Cloudflare-reachable networks</strong>
+            do the “Open full checker” buttons below matter; mainland readers can ignore them.
+          </li>
+        </ol>
+
+        <h3>3. Network detection and privacy</h3>
+        <ul>
+          <li>
+            <strong>On Workers</strong>
+            : Cloudflare
+            <code>CF-IPCountry</code>
+            (debug country code only — not for force-redirect, profiling, or ads).
+          </li>
+          <li>
+            <strong>On this page</strong>
+            : browser
+            <code>GET /api/health</code>
+            to Workers (short timeout, no cookies) to show reachability —
+            <strong>no auto-redirect</strong>.
+          </li>
+          <li>
+            <strong>Does not call</strong>
+            : <code>/api/check</code>
+            (that runs only after you open Workers and submit an address).
+          </li>
+          <li>
+            <strong>Language preference</strong>
+            : 中文 / EN choice stays in local
+            <code>localStorage</code>
+            (<code>buusdocst-china-lang</code>) only — not uploaded.
+          </li>
+        </ul>
+        <p>
+          Full privacy policy (on Workers —
+          <strong>non-mainland / Cloudflare-reachable networks only</strong>
+          ; mainland readers should rely on this notice):
+          <a
+            href="https://buusdocst.mtsu.workers.dev/en/privacy"
+            rel="noopener noreferrer"
+            data-testid="china-notice-privacy-link"
+            >https://buusdocst.mtsu.workers.dev/en/privacy</a
+          >.
+          From the mainland that link often times out or returns here.
+        </p>
+
+        <h3>4. Restoration</h3>
+        <p>
+          Restoration of the China entry is not scheduled. When conditions allow, a new notice
+          will be published. Until then the Project makes
+          <strong>no promise</strong>
+          about mainland reachability of the entry pages or Workers.
+        </p>
+
+        <h3>5. Contact</h3>
+        <p>
+          If you are on a Cloudflare-reachable network but cannot open Workers, or have questions
+          about this notice, contact us via
+          <a
+            href="https://github.com/otas0/buusdo-Cybersecurity-Service-Tool/issues"
+            rel="noreferrer"
+            >GitHub Issues</a
+          >. We apologise for the inconvenience and thank you for your understanding.
+        </p>
+        <p class="notice-sign">
+          buusdo Cybersecurity Service Tool developers<br />
+          Published: 23 November 2026
+        </p>
+
+        <div
+          id="workers-reach"
+          class="reach"
+          data-state="checking"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+          aria-busy="true"
+          data-testid="china-workers-reach"
+        >
+          <p class="reach-row">
+            <span class="reach-status" data-reach-status>Checking Workers…</span>
+          </p>
+          <p class="reach-detail" data-reach-detail></p>
+        </div>
+
+        <div class="actions">
+          <a
+            class="primary-button"
+            data-testid="china-workers-entry"
+            data-full-check
+            href="https://buusdocst.mtsu.workers.dev/en"
+            rel="noreferrer"
+            >Non-mainland / CF-reachable only: open full checker (/en)</a
+          >
+          <a
+            class="ghost-button"
+            data-testid="china-workers-zh-hans"
+            href="https://buusdocst.mtsu.workers.dev/zh-Hans"
+            rel="noreferrer"
+            >/zh-Hans</a
+          >
+          <a class="ghost-button" href="https://buusdocst.mtsu.workers.dev/en" rel="noreferrer"
+            >/en</a
+          >
+        </div>
+        <p class="hint" data-testid="china-region-redirect-hint">
+          This page only shows Workers reachability — no auto-redirect. Buttons above are
+          <strong>for non-mainland, Cloudflare-reachable networks</strong>
+          ; mainland readers should stay on this notice.
+          <a href="./en.html?china_stay=1" data-testid="china-stay-link">Pause probe</a>
+          ·
+          <a href="./en.html?china_stay=0" data-testid="china-stay-clear">Resume probe</a>.
+        </p>
+      </article>
+
+      <footer class="foot">
+        <p>buusdo Cybersecurity Service Tool · GitHub Pages</p>
+        <p class="foot-note" id="china-lang-pref">
+          Language preference is local only (<code>buusdocst-china-lang</code>). Privacy
+          (CF-reachable only):
+          <a
+            data-testid="china-workers-zh-hans-footnote"
+            href="https://buusdocst.mtsu.workers.dev/zh-Hans"
+            rel="noopener noreferrer"
+            >/zh-Hans</a
+          >
+          ·
+          <a
+            href="https://buusdocst.mtsu.workers.dev/en/privacy"
+            rel="noopener noreferrer"
+            data-testid="china-notice-privacy-footer"
+            >/en/privacy</a
+          >.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
